@@ -1,5 +1,10 @@
 # IRDM_project2
 
+## Group members
+- Zuzana Manhartova
+- Man Kit Siu
+- Karolina Dabkowska
+
 ## Prerequisite
 - pandas
 - tensorflow 
