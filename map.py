@@ -29,10 +29,12 @@ def apk(actual, predicted):     #, k=10
 def mapk(actual, predicted):        #, k=10
     return np.mean([apk(a,p) for a,p in zip(actual, predicted)])
 
-
+print("Opening saved datafiles")
 truerel = genfromtxt('first.csv', delimiter=',')
 idd = genfromtxt('second.csv', delimiter=',')
 model = genfromtxt('third.csv', delimiter=',')
+
+print 'Evaluating...'
 truerel = truerel[1:900000]
 idd = idd[1:900000]
 model = model[1:900000]
@@ -56,4 +58,4 @@ for i in range(len(lists)):
     a2 = [pp[idx] for idx in lists[i]]  
     a2.sort(key=getKey,reverse=True)
     predicted.append(a2)
-print(mapk(actual, predicted))
+print ('MAP for test data: %.4f' %(mapk(actual, predicted)))
