@@ -27,6 +27,7 @@ truerel = genfromtxt('first.csv', delimiter=',', skip_header=1)
 idd = genfromtxt('second.csv', delimiter=',', skip_header=1)
 model = genfromtxt('third.csv', delimiter=',', skip_header=1)
 
+print 'Evaluating...'
 values = set(map(lambda x:x[1], idd))
 lists = [[int(y[0]) for y in idd if y[1]==x] for x in values]
 #numbers = [ int(x) for x in numbers ]actual = []
