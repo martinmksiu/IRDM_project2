@@ -51,4 +51,4 @@ for q in range(len(lists)):
     ndgc.append(ndcg_at_k(true_y, 10))
     
 ndcgat10 = np.mean(ndgc)
-print(ndcgat10)
+print ('NDCG for test data: %.4f' %(ndcgat10))
