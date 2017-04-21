@@ -15,7 +15,7 @@ This repository does not include the MSLR-WEB10K data required. Data can be down
 ## main.py 
 Python code for logistic regression. Running this generate three .csv files (predicted labels, ground truth labels and query IDs). They are required for evaluations These would be saved in the same directory. 
 
-## ndcg2.py
+## ndcg.py
 Python code that loads the .csv files and generate NDCG metric.
 
 ## map.py
